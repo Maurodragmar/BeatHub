@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero pariatur quo necessitatibus, veniam harum cumque dignissimos odit! Recusandae labore culpa tenetur harum provident earum obcaecati excepturi porro vitae odit.</Text>
     </View>
   );
 }
