@@ -1,9 +1,14 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
+import { router } from "expo-router";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero pariatur quo necessitatibus, veniam harum cumque dignissimos odit! Recusandae labore culpa tenetur harum provident earum obcaecati excepturi porro vitae odit.</Text>
+      <Text style={styles.title}>BeatHub</Text>
+      <Button
+        title="Tester Deezer"
+        onPress={() => router.push("/testDeezer")}
+      />
     </View>
   );
 }
@@ -13,5 +18,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 16,
   },
 });
